@@ -67,7 +67,7 @@ img{
     align-items: center;
     gap: 40px;
 }
-.header-nav-list-item{
+.header-nav-list-item {
     font-size: 16px;
     color: #2e2f42;
     font-weight: 500;
@@ -77,43 +77,48 @@ img{
     padding: 24px 0;
     display: flex;
     align-items: center;
+    transition: all;
+    position: relative;
 }
-.header-nav-list-item:hover {
-    font-size: 16px;
-    color: #404BBF;
-    font-weight: 500;
-    font-size: 16px;
-}
+.header-nav-list-item:hover,
 .header-nav-list-item:focus {
-    font-size: 16px;
     color: #404BBF;
-    font-weight: 500;
-    font-size: 16px;
 }
-address{
+.header-nav-list-item::after {
+    content: "";
+    display: block;
+    position: absolute;
+    bottom: 0;
+    width: 0;
+    height: 4px;
+    background-color: #404BBF;
+    transition: width;
+}
+.header-nav-list-item:hover::after,
+.header-nav-list-item:focus::after {
+    width: 48px;
+}
+
+.address{
     font-style: normal;
 }
 .header-address-list{
     display: flex;
     gap: 40px;
 }
-
 .header-address-contacts {
     font-weight: 400 ;
     color: #434455;
     font-style: normal;
     line-height: 1.5;
     letter-spacing: 0.02em;
+    transition-property;
 }
 .header-address-contacts:hover{
-    font-weight: 400;
     color: #404BBF;
-    font-style: normal;
 }
 .header-address-contacts:focus {
-    font-weight: 400;
     color: #404BBF;
-    font-style: normal;
 }
 .hero{
     background-color: #2E2F42;
@@ -155,22 +160,13 @@ address{
     margin: 0 auto;
     display: block;
     border: none;
+    transition-property;
 }
 .hero-button:hover{
-    color: #ffffff;
     background-color: #404BBF;
-    font-weight: 500;
-    font-size: 16px;
-    line-height: 1.5;
-    letter-spacing: 0.04em;
 }
 .hero-button:focus {
-    color: #ffffff;
     background-color: #404BBF;
-    font-weight: 500;
-    font-size: 16px;
-    line-height: 1.5;
-    letter-spacing: 0.04em;
 }
 .about-us {
     padding: 120px 0;
@@ -295,6 +291,7 @@ address{
     color: rgba(244, 244, 253, 1);
     background-color: #4D5AE5;
     border-radius: 50px;
+    transition-property;
 }
 .socials-links:hover,
 .socials-links:focus{
@@ -421,6 +418,7 @@ address{
     border-radius: 50px;
     width: 40px;
     height: 40px;
+    transition-property;
 }
 .footer-socials-icons {
     fill: currentColor;
