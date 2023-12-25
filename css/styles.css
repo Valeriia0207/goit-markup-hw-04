@@ -386,7 +386,10 @@ img{
     background-color: #2E2F42;
     padding: 100px 0;
 }
-
+.footer-container{
+    display: flex;
+    align-items: baseline;
+}
 .logo-text-box{
     margin-right: 120px;
 }
@@ -432,7 +435,6 @@ img{
 .footer-socials-icons-list {
     display: flex;
     gap: 16px;
-
 }
 .footer-socials-icons-item {  
     width: 40px;
