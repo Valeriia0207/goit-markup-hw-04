@@ -352,13 +352,12 @@ img{
     color: #F4F4FD;
     padding: 40px 32px;
     background-color: #4d5ae5;
-    transition: transform box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    transform: translateY(100%);
 }
 .portfolio-list-item:hover{
-    box-shadow: 0px 2px 1px 0px rgba(46, 47, 66, 0.08), 0px 1px 1px 0px rgba(46, 47, 66, 0.16), 0px 1px 6px 0px rgba(46, 47, 66, 0.08);
+    transition: transform box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
-.overlay-wrapper:hover .overlay,
-.overlay-wrapper:focus .overlay{
+.overlay-wrapper:hover .overlay{
     transform: translateY(0);
 }
 
